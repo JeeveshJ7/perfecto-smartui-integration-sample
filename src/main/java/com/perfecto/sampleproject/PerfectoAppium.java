@@ -29,10 +29,10 @@ public class PerfectoAppium {
 	@Test
 	public void appiumTest() throws Exception {
 		// Replace <<cloud name>> with your perfecto cloud name (e.g. demo) or pass it as maven properties: -DcloudName=<<cloud name>>  
-		String cloudName = "netfunda";
+		String cloudName = "Your Cloud Name";
 		
 		// Replace <<security token>> with your perfecto security token or pass it as maven properties: -DsecurityToken=<<SECURITY TOKEN>>  More info: https://developers.perfectomobile.com/display/PD/Generate+security+tokens
-		String securityToken = "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJjYjA0ZmY2Yi1lMWMyLTQ5NzYtOGRmMC01ZmEzZTFkYzdlMDMifQ.eyJpYXQiOjE3NDE3MDIxMDYsImp0aSI6IjY4NDJjMDMzLTU4MzgtNGU3ZC05ZmM5LWNmM2VjYjVlYjcyOSIsImlzcyI6Imh0dHBzOi8vYXV0aC5wZXJmZWN0b21vYmlsZS5jb20vYXV0aC9yZWFsbXMvbmV0ZnVuZGEtcGVyZmVjdG9tb2JpbGUtY29tIiwiYXVkIjoiaHR0cHM6Ly9hdXRoLnBlcmZlY3RvbW9iaWxlLmNvbS9hdXRoL3JlYWxtcy9uZXRmdW5kYS1wZXJmZWN0b21vYmlsZS1jb20iLCJzdWIiOiIzYzk2OWI1Yi01NjVmLTRiNDAtYTEyNy0zMzczZGMxOThjZWMiLCJ0eXAiOiJPZmZsaW5lIiwiYXpwIjoib2ZmbGluZS10b2tlbi1nZW5lcmF0b3IiLCJub25jZSI6IjQ4YWJlODAzLTVkMGUtNDYzMy04NWY0LWMzODBkYzE4M2Q0MyIsInNlc3Npb25fc3RhdGUiOiIzNmJmOTk2OS01NGFjLTQ2NTctYWFiNy0yNzhlMzkyMzUwODciLCJzY29wZSI6Im9wZW5pZCBvZmZsaW5lX2FjY2VzcyBwcm9maWxlIGVtYWlsIiwic2lkIjoiMzZiZjk5NjktNTRhYy00NjU3LWFhYjctMjc4ZTM5MjM1MDg3In0.b-_JIjTdHq4SZySG105QE8I6z3n_JoQicNwN-X6kQXg";
+		String securityToken = "Your Perfecto Security Token";
 		
 		cloudName = PerfectoLabUtils.fetchCloudName(cloudName);
 		securityToken = PerfectoLabUtils.fetchSecurityToken(securityToken);
@@ -72,7 +72,7 @@ public class PerfectoAppium {
 		email.sendKeys("test@perfecto.com");
 
 		Map<String,String> ssConfig = new HashMap<>();
-		ssConfig.put("projectToken","1365764#bf7c521a-313f-4583-8693-3cdf381f11aa#APP_SDK_PROJECT");
+		ssConfig.put("projectToken","SmartUI Project Token");
 
 		ssConfig.put("deviceName","Galaxy");
 		// ssConfig.put("buildName","Sample Build Name");
