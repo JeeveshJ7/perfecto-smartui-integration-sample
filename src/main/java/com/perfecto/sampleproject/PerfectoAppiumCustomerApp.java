@@ -26,10 +26,10 @@ public class PerfectoAppiumCustomerApp {
 	@Test
 	public void appiumTest() throws Exception {
 		// Replace <<cloud name>> with your perfecto cloud name (e.g. demo) or pass it as maven properties: -DcloudName=<<cloud name>>
-		String cloudName = "trial";
+		String cloudName = "cloudName";
 
 		// Replace <<security token>> with your perfecto security token or pass it as maven properties: -DsecurityToken=<<SECURITY TOKEN>>  More info: https://developers.perfectomobile.com/display/PD/Generate+security+tokens
-		String securityToken = "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2ZDM2NmJiNS01NDAyLTQ4MmMtYTVhOC1kODZhODk4MDYyZjIifQ.eyJpYXQiOjE3NDE2MDkwNzMsImp0aSI6ImI4Y2I0YTJlLTU2NjItNDEzOC05MDZjLWI2NTkyZTE5NGJiNCIsImlzcyI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsImF1ZCI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsInN1YiI6ImVhMWZiYzE2LTdmZDYtNDA0Ny04ZTFiLTE5YTVlZDU3ZDFhOCIsInR5cCI6Ik9mZmxpbmUiLCJhenAiOiJvZmZsaW5lLXRva2VuLWdlbmVyYXRvciIsIm5vbmNlIjoiMmM1ZmJiN2ItZGVlZC00ZjVmLTg2NGItMmIzY2E2NTY1YTk2Iiwic2Vzc2lvbl9zdGF0ZSI6IjVjNTBjZDhhLWFkM2EtNDU1Yy1iNzBhLTZhYmUxYjI2NjcwNiIsInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIHByb2ZpbGUgZW1haWwiLCJzaWQiOiI1YzUwY2Q4YS1hZDNhLTQ1NWMtYjcwYS02YWJlMWIyNjY3MDYifQ.LbcNLc6qtssK0inyJP4T_gAgFbaOJdTPggJ04rf6Bas";
+		String securityToken = "Token";
 
 		cloudName = PerfectoLabUtils.fetchCloudName(cloudName);
 		securityToken = PerfectoLabUtils.fetchSecurityToken(securityToken);
